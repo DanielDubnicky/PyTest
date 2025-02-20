@@ -1,3 +1,7 @@
+a = input("Dej a more")
+b = input("Dej b more")
+
+
 def add(a, b):
     return a + b
 def add_wrong(a,b):
