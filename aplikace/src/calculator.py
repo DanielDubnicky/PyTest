@@ -1,5 +1,5 @@
-a = input("Dej a more")
-b = input("Dej b more")
+a = float(input("Dej a more"))
+b = float(input("Dej b more"))
 
 
 def add(a, b):
