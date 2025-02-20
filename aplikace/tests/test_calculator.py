@@ -1,2 +1,2 @@
-from src import calculator
 import pytest
+from src import calculator
