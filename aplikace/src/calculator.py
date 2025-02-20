@@ -1,4 +1,4 @@
-a = float(input("Dej a more"))
+a = float(input("Dej a more")) 
 b = float(input("Dej b more"))
 
 
