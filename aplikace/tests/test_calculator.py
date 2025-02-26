@@ -6,6 +6,7 @@ def test_add():
 
 def test_add_wrong():
     assert calculator.add_wrong(5,3) == 8
+<<<<<<< HEAD
 
 def test_subtract():
     assert calculator.subtract(5,3) == 2
@@ -18,3 +19,5 @@ def test_multiply_wrong():
 
 def test_divide():
     assert calculator.divide(6,2) == 3
+=======
+>>>>>>> c040ed9e5576a933c5899725150b8171c1410f13
