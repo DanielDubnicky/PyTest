@@ -1,6 +1,3 @@
-a = float(input("Dej a more")) 
-b = float(input("Dej b more"))
-
 
 def add(a, b):
     return a + b
