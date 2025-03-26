@@ -25,3 +25,23 @@ def test_add_2():
 
 def test_add_parametrized(a, b, exptected):
     assert calculator.add_wrong(a, b) == exptected
+
+@pytest.mark.parametrize(
+
+    "a, b, expected_exception, expected_msg",
+    [
+
+        (8, 5, ValueError, "Cannot take log of non-positive number!"),
+
+        (-2, 5, ValueError, "Cannot take log of non-positive number)"),
+
+        (9, -2, ZeroDivisionError, "Cannot take log with non-positive base!"),
+
+        (5, 1, NameError, "Cannot take log with base 1!"),
+    ],
+
+)
+
+def test_log(a, b, expected_exception, expected_msg): 
+    with pytest.raises(expected_exception) as exc: 
+        calculator.log(a, b)
